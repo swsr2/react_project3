@@ -1,0 +1,102 @@
+.login-button{
+  display: flex;
+  justify-content: flex-end;
+  margin:20px;
+  cursor: pointer;
+}
+
+.nav-section{
+  display: flex;
+  justify-content: center;
+}
+.menu-area {
+  position: relative; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute; /* Center the ul absolutely */
+  left: 50%; /* Start from the 50% point of the parent */
+  transform: translateX(-50%); /* Shift it back by 50% of its width */
+}
+
+.menu-list li {
+  cursor: pointer;
+}
+
+.search-area {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 250px;
+}
+
+.search-area input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  padding: 10px;
+  outline: none;
+  font-size: 16px;
+}
+
+.search-area input::placeholder {
+  color: #aaa;
+}
+
+.search-area input:focus {
+  border-bottom: 2px solid #000; /* Change border color on focus */
+}
+
+.search-area svg {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+}
+
+
+.product-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+    overflow: hidden; 
+}
+
+.product-img {
+    width: 100%; 
+    object-fit: cover; 
+    transition: transform 0.3s ease-in-out;  
+  }
+
+.product-card:hover {
+    transform: scale(1.1); 
+    z-index:1;
+}
+.form-main{
+  margin: 50px;
+  justify-items: center;
+}
+.mb-3{
+
+  width: 500px;
+}
+
+.detail-img{
+  display: flex;
+  justify-content: flex-end;
+}
+.d-grid{
+  padding-top: 20px;
+}
